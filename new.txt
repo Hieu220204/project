@@ -1,0 +1,84 @@
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ git version
+git version 2.44.0.windows.1
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ git init
+Initialized empty Git repository in C:/Users/admi/OneDrive/Desktop/project/.git/
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ git config user.name "Hieu2004"
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ git add https://github.com/Hieu220204/project.git
+fatal: pathspec 'https://github.com/Hieu220204/project.git' did not match any files
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ git add -A
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ git commit -m "Hieu"
+[master (root-commit) 8f5466c] Hieu
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ status --short
+bash: status: command not found
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ git commit -a -m "New"
+On branch master
+nothing to commit, working tree clean
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ git log
+commit 8f5466c6d83dd25e21bfcd3512bc2f573bbdab70 (HEAD -> master)
+Author: Hieu2004 <hieu999vu@gmail.com>
+Date:   Fri Apr 12 13:13:43 2024 +0700
+
+    Hieu
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ git branch
+* master
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ git branch hello
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ git branch
+  hello
+* master
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (master)
+$ git checkout hello
+Switched to branch 'hello'
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (hello)
+$ git checkout -b hello-you
+Switched to a new branch 'hello-you'
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (hello-you)
+$ git merge hello-you
+Already up to date.
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (hello-you)
+$ git branch -d hello-you
+error: cannot delete branch 'hello-you' used by worktree at 'C:/Users/admi/OneDrive/Desktop/project'
+
+admi@LAPTOP-3K2BOA9Q MINGW64 ~/OneDrive/Desktop/project (hello-you)
+$
